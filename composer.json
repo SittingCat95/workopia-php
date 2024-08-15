@@ -1,0 +1,17 @@
+{
+    "name": "sittingcat95/workopia-php",
+    "description": "Job listing application",
+    "author": [
+        {
+            "name": "April Jan Soliven",
+            "email": "apriljan.soliven@deped.gov.ph"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "Framework\\": "Framework/",
+            "App\\": "App/"
+        }
+
+    }
+}
