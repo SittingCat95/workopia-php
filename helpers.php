@@ -87,3 +87,27 @@ function formatSalary($salary)
 {
     return '$' . number_format(floatval($salary));
 }
+
+/**
+ * Sanitize Data
+ * 
+ * @param String $dirty
+ * @return string
+ */
+
+function sanitize($dirty)
+{
+    return filter_var(trim($dirty), FILTER_SANITIZE_SPECIAL_CHARS);
+}
+
+/**
+ * Redirect to a given URL
+ * 
+ * @param string URL
+ * @return void
+ */
+function redirect($url)
+{
+    header("Location: {$url}");
+    exit;
+}
